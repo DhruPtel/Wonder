@@ -5,10 +5,20 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
 import { Provider } from "react-redux";
 import "./styles/reset.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home.js";
+import Moods from "./Components/Moods.js";
+import Mint from "./Components/Mint.js";
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Mint" element={<Mint />} />
+        <Route exact path="/Moods" element={<Moods />} />
+      </Routes>
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

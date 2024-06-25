@@ -50,6 +50,10 @@ export const Container = styled.div`
   background-position: center;
 `;
 
+export const Holder = styled.div`
+  display: flex;
+`;
+
 export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 22px;
@@ -61,6 +65,12 @@ export const TextSubTitle = styled.p`
   color: var(--primary-text);
   font-size: 18px;
   line-height: 1.6;
+`;
+
+export const Nftimage = styled.p`
+  width: 120px;
+  height: 120px;
+  border-radius: 5ps;
 `;
 
 export const TextDescription = styled.p`
